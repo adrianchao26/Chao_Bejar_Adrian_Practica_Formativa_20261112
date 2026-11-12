@@ -1,2 +1,3 @@
 2026-11-12 19:21:33 - INFO - --- NUEVA EJECUCIÓN DEL PIPELINE DE VALIDACIÓN ---
 2026-11-12 19:21:33 - ERROR - ALERTA DE INTEGRIDAD: 'transacciones_tienda_sur.csv' ha sido modificado o está corrupto. Movido a cuarentena (quarantine\tampered). Hash esperado: 0773c2cde0d45d3bfea53ebe6a0ad9f8fd7f04dabd23f55e737f64918128b83c | Hash calculado: 1c47dff4bf34eff59390c211052be942851d158740366ab4ab35159fd9986805
+2026-11-12 20:20:48 - INFO - --- NUEVA EJECUCIÓN DEL PIPELINE DE VALIDACIÓN ---
