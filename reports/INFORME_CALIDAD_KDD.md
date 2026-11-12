@@ -36,9 +36,9 @@ Total en `quarantine/bad_records.csv`: 13.
  
 ## 4. Conclusiones tecnicas
  
-- **Integridad:** el fichero 'transacciones_tienda_sur.csv' se ha aislado en `quarantine/tampered/` por tener un valor hash invalido.
-- **Descartes:** se descartaron los registros sin `id_transaccion` o sin `importe_eur`, porque son variables obligatorias que no se pueden tratar sin ellas.
-- **Coherencia:** se rechazaron timestamps invalidos, fechas futuras o de otro año, importes <= 0 y unidades < 1, por no tener sentido de negocio.
-- **Outliers:** se detectaron con la regla del IQR (1,5 x IQR) y se enviaron a cuarentena en lugar de borrarse, para poder gestionarlos.
-- **Imputacion:** los nulos en `categoria` y `metodo_pago` se imputaron con "Desconocido", ya que son categoricas y la mediana no se aplica; de esa forma se pierde el registro.
-- **Resultado:** el dataset limpio tiene 100% de completitud y una distribucion sin valores extremos, lo que garantiza la consistencia de los datos.
+- Integridad: el fichero 'transacciones_tienda_sur.csv' se ha aislado en `quarantine/tampered/` por tener un valor hash invalido.
+- Descartes: se descartaron los registros sin `id_transaccion` o sin `importe_eur`, porque son variables obligatorias que no se pueden tratar sin ellas.
+- Coherencia: se rechazaron timestamps invalidos, fechas futuras o de otro año, importes <= 0 y unidades < 1, por no tener sentido de negocio.
+- Outliers: se detectaron con la regla del IQR (1,5 x IQR) y se enviaron a cuarentena en lugar de borrarse, para poder gestionarlos.
+- Imputacion: los nulos en `categoria` y `metodo_pago` se imputaron con "Desconocido", ya que son categoricas y la mediana no se aplica; de esa forma se pierde el registro.
+- Resultado: el dataset limpio tiene 100% de completitud y una distribucion sin valores extremos, lo que garantiza la consistencia de los datos.
